@@ -27,22 +27,17 @@ const CourseCard: React.FC<CourseCardProps> = ({
   return (
     <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col h-full transform hover:-translate-y-1">
       <div className="relative">
-        <img src={image} alt={title} className="w-full h-48 object-cover " />
-        <div className="absolute top-4 left-4 bg-emerald-500 text-white text-xs font-semibold px-2 py-1 rounded-full">
+        <img src={image} alt={title} className="w-full object-contain" />
+        <div className="absolute top-2 left-3 bg-emerald-500 text-white text-[10px]  px-2 py-1 rounded-full">
           {category}
         </div>
-        {originalPrice > price && (
-          <div className="absolute top-4 right-4 bg-amber-500 text-white text-xs font-semibold px-2 py-1 rounded-full">
-            Eid Special
-          </div>
-        )}
       </div>
 
-      <div className="p-6 flex-grow">
-        <h3 className="lg:text-xl text-[15px] leading-[1.2] font-bold mb-2 text-gray-800">
+      <div className="p-4 flex-grow">
+        <h3  className="font-hind lg:text-xl text-[15px] leading-[1.2] font-bold mb-2 text-gray-800">
           {title}
         </h3>
-        <p className="text-gray-600 text-sm">{description}</p>
+        <p className="font-hind text-gray-600 text-sm">{description}</p>
       </div>
 
       <div className="px-6 pb-6 mt-auto">

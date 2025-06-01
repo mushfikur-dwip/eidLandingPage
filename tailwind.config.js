@@ -4,6 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        hind: ["var(--font-hind)"],
+
         sans: [
           "Inter",
           "system-ui",
