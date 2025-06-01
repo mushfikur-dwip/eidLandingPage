@@ -3,7 +3,7 @@ import { Star } from "lucide-react";
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative pt-28 pb-3 md:pt-36 md:pb-24 overflow-hidden">
+    <section className="relative pt-[80px] pb-3 md:pt-36 md:pb-24 overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-20 right-10 md:right-24 animate-float-slow">
         <Star className="h-10 w-10 text-amber-400 opacity-70" />

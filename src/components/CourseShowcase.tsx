@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "../index.css"; // Ensure Tailwind CSS is imported
 interface Course {
   title: string;
   description: string;
@@ -64,7 +65,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
         </div>
         <div className="flex justify-center">
           <a
-            className="w-full text-center  bg-gradient-to-r from-emerald-500 to-emerald-600 text-white py-3 lg:px-14 px-6 rounded-lg hover:from-emerald-600 hover:to-emerald-700 transition-all font-medium"
+            className="w-full text-center  bg-gradient-to-r from-emerald-500 to-emerald-600 text-white py-2 lg:px-14 px-6 rounded-lg hover:from-emerald-600 hover:to-emerald-700 transition-all font-medium"
             href={enrollBtn}
             target="_blank"
             rel="noopener noreferrer"

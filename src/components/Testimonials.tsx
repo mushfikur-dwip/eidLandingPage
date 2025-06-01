@@ -11,48 +11,41 @@ interface Testimonial {
 }
 
 const Testimonials: React.FC = () => {
-  const testimonials: Testimonial[] = [
-    {
-      id: 1,
-      name: "Ahmed Khalid",
-      role: "Arabic Student",
-      image: "https://placehold.co/300x300/10B981/FFFFFF?text=AK",
-      rating: 5,
-      text: "The Quranic Arabic course transformed my understanding of the holy text. The instructor's teaching style made complex concepts accessible and enjoyable to learn.",
-    },
-    {
-      id: 2,
-      name: "Fatima Hassan",
-      role: "Calligraphy Enthusiast",
-      image: "https://placehold.co/300x300/8B5CF6/FFFFFF?text=FH",
-      rating: 5,
-      text: "I've always wanted to learn Islamic calligraphy but couldn't find a quality course. This platform's step-by-step approach and detailed feedback helped me create beautiful pieces I'm proud of.",
-    },
-    {
-      id: 3,
-      name: "Mohammed Ali",
-      role: "Finance Professional",
-      image: "https://placehold.co/300x300/3B82F6/FFFFFF?text=MA",
-      rating: 4,
-      text: "The Islamic Finance course provided practical knowledge I could immediately apply in my career. The case studies and real-world examples were particularly valuable.",
-    },
-    {
-      id: 4,
-      name: "Aisha Rahman",
-      role: "Home Chef",
-      image: "https://placehold.co/300x300/F59E0B/FFFFFF?text=AR",
-      rating: 5,
-      text: "After taking the Eid cooking masterclass, I surprised my family with traditional dishes from across the Muslim world. The techniques were well-explained and the recipes delicious!",
-    },
-    {
-      id: 5,
-      name: "Omar Khan",
-      role: "University Student",
-      image: "https://placehold.co/300x300/EC4899/FFFFFF?text=OK",
-      rating: 5,
-      text: "The flexible schedule and high-quality content made learning during my busy university semester possible. I appreciate the lifetime access to materials for future reference.",
-    },
-  ];
+  const testimonials: Testimonial[] = 
+    [
+      {
+        id: 1,
+        name: "Debojit Saha",
+        role: "Learner",
+        image: "https://placehold.co/300x300/10B981/FFFFFF?text=DS",
+        rating: 5,
+        text: "This course is an overall summary of Videography, Canva, Premiere Pro, Midjourney, OpenAI, and many more. The new way of thinking by using ChatGPT will help you in every aspect of life. You will feel the dedication of Sabbir Bhai when you find out 2h+ tutorial video on Premiere Pro, 45min+ full dedicated LinkedIn video when the course is for Midjourney and ChatGPT. This course is so encouraging.",
+      },
+      {
+        id: 2,
+        name: "Mohammed Yeasin Arafat",
+        role: "Learner",
+        image: "https://placehold.co/300x300/10B981/FFFFFF?text=MYA",
+        rating: 5,
+        text: "Simply excellent courses conducted by Sabbir Bhai. He has presented his nature very easily, making it easy for anyone to learn. Even a non-tech-savvy person can learn the course with ease. Most importantly, he has shown so many important & tricky issues in a very simple way. I wish all the very best to Instructor Sabbir Bhai.",
+      },
+      {
+        id: 3,
+        name: "Saiful Islam",
+        role: "Learner",
+        image: "https://placehold.co/300x300/10B981/FFFFFF?text=SI",
+        rating: 5,
+        text: "চ্যাটজিপিটি আগেও জানতাম তবে, সিম্পল জিনিস টাও যে অসাধারণ ভাবে করা যায় তা সাব্বির ভাই দারুণ ভাবে বুঝিয়েছেন। চ্যাটজিপিটি ফ্রি ভার্সন ব্যবহার করেও আপনি দারুণ ভাবে আপনার প্রোডাক্টিভি বাড়াতে পারেন। মডিউল টাও দারুণ ভাবে সাজিয়েছেন, প্রতিটা কন্টেন্ট প্রতিটা মানুষের জন্য গুরুত্বপূর্ণ। ফ্রিল্যান্স বা জব হোল্ডার সবার জন্যই এই কোর্স বেস্ট চয়েজ। মেন্টর হিসাবে চ্যাটজিপিটি হতে পারে আপনার সব থেকে কাছের বন্ধু।",
+      },
+      {
+        id: 4,
+        name: "Abdullah Nur",
+        role: "Digital Marketing Student",
+        image: "https://placehold.co/300x300/10B981/FFFFFF?text=AN",
+        rating: 5,
+        text: "This course really opened my eyes to how ChatGPT can be used to increase productivity. The methods shown are easy to apply, and Sabbir Bhai’s teaching style is really engaging. I recommend this course to anyone looking to enhance their skills.",
+      },
+    ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);

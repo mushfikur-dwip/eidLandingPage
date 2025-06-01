@@ -18,6 +18,12 @@ const CountdownTimer: React.FC = () => {
     seconds: 0
   });
 
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   useEffect(() => {
     const calculateTimeLeft = () => {
       const now = new Date().getTime();
@@ -50,47 +56,69 @@ const CountdownTimer: React.FC = () => {
         <div className="absolute top-10 left-10 w-40 h-40 rounded-full bg-white"></div>
         <div className="absolute bottom-10 right-10 w-60 h-60 rounded-full bg-white"></div>
       </div>
-      
+
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Eid-ul-Adha 2025 Special Offer</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Eid-ul-Adha 2025 Special Offer
+          </h2>
           <p className="text-lg text-emerald-100 max-w-2xl mx-auto">
-            Our festive sale ends with the celebration. Don't miss out on these limited-time discounts!
+            Our festive sale ends with the celebration. Don't miss out on these
+            limited-time discounts!
           </p>
         </div>
-        
+
         <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8 max-w-4xl mx-auto">
           <div className="flex flex-col items-center">
             <div className="w-20 h-20 md:w-28 md:h-28 bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl flex items-center justify-center shadow-lg border border-white border-opacity-20">
-              <span className="text-3xl md:text-5xl font-bold">{formatNumber(timeLeft.days)}</span>
+              <span className="text-3xl md:text-5xl font-bold">
+                {formatNumber(timeLeft.days)}
+              </span>
             </div>
-            <span className="mt-2 text-sm md:text-base text-emerald-100">Days</span>
+            <span className="mt-2 text-sm md:text-base text-emerald-100">
+              Days
+            </span>
           </div>
-          
+
           <div className="flex flex-col items-center">
             <div className="w-20 h-20 md:w-28 md:h-28 bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl flex items-center justify-center shadow-lg border border-white border-opacity-20">
-              <span className="text-3xl md:text-5xl font-bold">{formatNumber(timeLeft.hours)}</span>
+              <span className="text-3xl md:text-5xl font-bold">
+                {formatNumber(timeLeft.hours)}
+              </span>
             </div>
-            <span className="mt-2 text-sm md:text-base text-emerald-100">Hours</span>
+            <span className="mt-2 text-sm md:text-base text-emerald-100">
+              Hours
+            </span>
           </div>
-          
+
           <div className="flex flex-col items-center">
             <div className="w-20 h-20 md:w-28 md:h-28 bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl flex items-center justify-center shadow-lg border border-white border-opacity-20">
-              <span className="text-3xl md:text-5xl font-bold">{formatNumber(timeLeft.minutes)}</span>
+              <span className="text-3xl md:text-5xl font-bold">
+                {formatNumber(timeLeft.minutes)}
+              </span>
             </div>
-            <span className="mt-2 text-sm md:text-base text-emerald-100">Minutes</span>
+            <span className="mt-2 text-sm md:text-base text-emerald-100">
+              Minutes
+            </span>
           </div>
-          
+
           <div className="flex flex-col items-center">
             <div className="w-20 h-20 md:w-28 md:h-28 bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl flex items-center justify-center shadow-lg border border-white border-opacity-20">
-              <span className="text-3xl md:text-5xl font-bold">{formatNumber(timeLeft.seconds)}</span>
+              <span className="text-3xl md:text-5xl font-bold">
+                {formatNumber(timeLeft.seconds)}
+              </span>
             </div>
-            <span className="mt-2 text-sm md:text-base text-emerald-100">Seconds</span>
+            <span className="mt-2 text-sm md:text-base text-emerald-100">
+              Seconds
+            </span>
           </div>
         </div>
-        
+
         <div className="text-center mt-12">
-          <button className="bg-white text-emerald-800 px-8 py-3 rounded-full font-medium hover:shadow-lg transform hover:-translate-y-1 transition-all">
+          <button
+            onClick={() => scrollToSection("courses")}
+            className="bg-white text-emerald-800 px-8 py-3 rounded-full font-medium hover:shadow-lg transform hover:-translate-y-1 transition-all"
+          >
             Claim Your Eid Discount
           </button>
         </div>
