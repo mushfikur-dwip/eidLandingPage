@@ -3,11 +3,10 @@ import { Gift } from "lucide-react";
 
 const BonusStrip: React.FC = () => {
   const bonuses = [
-    "Free Eid E-Book Collection",
-    "30-Day Mentor Support",
+    "Bundle Eid E-Book Collection",
+    "30-Days Money Back Guarantee",
     "Exclusive Webinar Access",
-    "Digital Eid Greeting Cards",
-    "Islamic Art Templates",
+    "2 Years Free Updates",
     "Private Community Access",
     "Course Completion Certificate",
     "1-on-1 Feedback Session",

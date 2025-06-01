@@ -99,23 +99,23 @@ const Navbar: React.FC = () => {
               >
                 Courses
               </button>
-              <button
+              {/* <button
                 onClick={() => scrollToSection("features")}
                 className="text-gray-700 hover:text-emerald-600 transition-colors py-2"
               >
                 Features
+              </button> */}
+              <button
+                onClick={() => scrollToSection("pricing")}
+                className="text-gray-700 hover:text-emerald-600 transition-colors py-2"
+              >
+                Bundles
               </button>
               <button
                 onClick={() => scrollToSection("testimonials")}
                 className="text-gray-700 hover:text-emerald-600 transition-colors py-2"
               >
                 Testimonials
-              </button>
-              <button
-                onClick={() => scrollToSection("pricing")}
-                className="text-gray-700 hover:text-emerald-600 transition-colors py-2"
-              >
-                Pricing
               </button>
               <button
                 onClick={() => scrollToSection("faq")}

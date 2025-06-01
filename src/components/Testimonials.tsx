@@ -153,7 +153,7 @@ const Testimonials: React.FC = () => {
                         </div>
                       </div>
                     </div>
-                    <p className="text-gray-700 italic">"{testimonial.text}"</p>
+                    <p className="font-hind text-gray-700 italic">"{testimonial.text}"</p>
                   </div>
                 </div>
               ))}

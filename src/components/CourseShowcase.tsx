@@ -34,7 +34,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
       </div>
 
       <div className="p-4 flex-grow">
-        <h3  className="font-hind lg:text-xl text-[15px] leading-[1.2] font-bold mb-2 text-gray-800">
+        <h3 className="font-hind lg:text-xl text-[15px] leading-[1.2] font-bold mb-2 text-gray-800">
           {title}
         </h3>
         <p className="font-hind text-gray-600 text-sm">{description}</p>
@@ -52,11 +52,11 @@ const CourseCard: React.FC<CourseCardProps> = ({
               </span>
             )}
           </div>
-          {originalPrice > price && (
+          {/* {originalPrice > price && (
             <span className="text-amber-600 text-[12px] font-medium">
               Up TO 90% off
             </span>
-          )}
+          )} */}
         </div>
         <div className="flex justify-center">
           <a
@@ -91,7 +91,7 @@ const CourseShowcase: React.FC = () => {
             Featured Courses
           </span>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Our Eid Special Collection
+            Our Collection
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Explore our carefully curated courses designed to enrich your

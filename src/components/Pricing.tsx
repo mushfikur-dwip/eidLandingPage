@@ -136,13 +136,13 @@ const BundleCard: React.FC<BundleProps> = ({
   >
     <img src={image} alt={title} className="w-full" />
     <div className="p-6">
-      <p className="text-4xl font-bold font-poppins mb-2">{price}</p>
-      <p className="text-gray-600 mb-6">
-        টোটাল <del className="text-gray-500">{oldPrice}</del>
+      <p className="text-4xl font-bold font-hind mb-2">{price}</p>
+      <p className="text-gray-600 mb-6 font-hind">
+        টোটাল <del className="text-gray-500 font-hind">{oldPrice}</del>
       </p>
-      <h3 className="text-2xl font-semibold font-poppins mb-2">{title}</h3>
+      <h3 className="text-2xl font-semibold font-hind mb-2">{title}</h3>
 
-      <ul className="space-y-3  mb-8">
+      <ul className="space-y-3 font-hind mb-8">
         {features.map((feature, idx) => (
           <li key={idx} className="flex items-center">
             <svg
@@ -166,7 +166,7 @@ const BundleCard: React.FC<BundleProps> = ({
       <div className="flex justify-center">
         <a
           href={link}
-          className="w-full text-center  bg-gradient-to-r from-emerald-500 to-emerald-600 text-white py-3 lg:px-14 px-6 rounded-lg hover:from-emerald-600 hover:to-emerald-700 transition-all font-medium"
+          className="w-full text-center font-hind bg-gradient-to-r from-emerald-500 to-emerald-600 text-white py-3 lg:px-14 px-6 rounded-lg hover:from-emerald-600 hover:to-emerald-700 transition-all font-medium"
         >
           ৩টি কোর্সের বান্ডেল কিনুন
         </a>

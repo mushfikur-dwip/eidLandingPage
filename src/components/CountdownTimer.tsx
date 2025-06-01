@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Hero from './Hero';
 
 interface TimeLeft {
   days: number;
@@ -50,7 +51,7 @@ const CountdownTimer: React.FC = () => {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-r from-emerald-900 to-purple-900 text-white relative overflow-hidden">
+    <section className="mt-20 py-16 bg-gradient-to-r from-emerald-900 to-purple-900 text-white relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-0 left-0 w-full h-full opacity-10">
         <div className="absolute top-10 left-10 w-40 h-40 rounded-full bg-white"></div>
@@ -58,6 +59,15 @@ const CountdownTimer: React.FC = () => {
       </div>
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
+        <img
+          src="https://learningbangladesh.com/wp-content/uploads/2025/06/facebook-cover-3-1x.jpg"
+          alt="Eid Sale"
+          className="w-full h-auto rounded-lg mb-8 shadow-lg"
+          loading="lazy"
+          decoding="async"
+          style={{ maxHeight: '400px', objectFit: 'cover' }}
+          referrerPolicy="no-referrer"
+        />
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Eid-ul-Adha 2025 Special Offer

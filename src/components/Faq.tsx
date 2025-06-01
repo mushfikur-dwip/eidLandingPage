@@ -46,7 +46,7 @@ const Faq: React.FC = () => {
                 className="flex w-full justify-between items-center text-left focus:outline-none"
                 onClick={() => toggleQuestion(index)}
               >
-                <h3 className="text-lg font-medium text-gray-800">
+                <h3 className="text-lg font-medium font-hind text-gray-800">
                   {item.question}
                 </h3>
                 {openIndex === index ? (
@@ -62,7 +62,7 @@ const Faq: React.FC = () => {
                     : "max-h-0 opacity-0"
                 }`}
               >
-                <p className="text-gray-600">{item.answer}</p>
+                <p className="text-gray-600 font-hind">{item.answer}</p>
               </div>
             </div>
           ))}

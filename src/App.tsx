@@ -30,14 +30,14 @@ function App() {
     <div className="font-sans text-gray-800 bg-gradient-to-br from-emerald-50 to-purple-50">
       <Navbar />
       <main>
-        <Hero />
+        {/* <Hero /> */}
         <CountdownTimer />
         <CourseShowcase />
         {/* <Features /> */}
         <BonusStrip />
-        <Testimonials />
         <Pricing />
         <Faq />
+        <Testimonials />
         {/* <Checkout /> */}
       </main>
       <Footer />
