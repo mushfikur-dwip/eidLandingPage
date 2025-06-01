@@ -1,9 +1,9 @@
-import React from 'react';
-import { Star } from 'lucide-react';
+import React from "react";
+import { Star } from "lucide-react";
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
+    <section className="relative pt-28 pb-3 md:pt-36 md:pb-24 overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-20 right-10 md:right-24 animate-float-slow">
         <Star className="h-10 w-10 text-amber-400 opacity-70" />
@@ -14,10 +14,10 @@ const Hero: React.FC = () => {
       <div className="absolute top-40 left-5 md:left-32 animate-float-delayed">
         <div className="h-16 w-16 rounded-full bg-gradient-to-r from-purple-400 to-purple-600 opacity-20"></div>
       </div>
-      
+
       <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center max-w-4xl mx-auto">
-          <div className="inline-block mb-4">
+        <div className="text-center mx-auto">
+          {/* <div className="inline-block mb-4">
             <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-emerald-100 text-emerald-800">
               <span className="mr-1">✨</span> Eid-ul-Adha Special 2025
             </span>
@@ -64,7 +64,12 @@ const Hero: React.FC = () => {
               </div>
               <span>4.9/5 from 350+ reviews</span>
             </div>
-          </div>
+          </div> */}
+          <img
+            src="https://learningbangladesh.com/wp-content/uploads/2025/06/facebook-cover-3-1x.jpg"
+            alt="Hero"
+            className="w-[1900px] h-auto rounded-lg shadow-lg"
+          />
         </div>
       </div>
     </section>

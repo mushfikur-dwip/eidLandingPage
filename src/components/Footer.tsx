@@ -1,10 +1,9 @@
-import React from 'react';
-import { Moon, Facebook, Twitter, Instagram, Youtube, Mail, Phone } from 'lucide-react';
+import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-900 text-gray-400 pt-16 pb-8">
-      <div className="container mx-auto px-4 md:px-6">
+    <footer className="bg-gray-900 text-gray-400 pt-8 pb-8">
+      {/* <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <div className="flex items-center mb-4">
@@ -78,16 +77,26 @@ const Footer: React.FC = () => {
               </div>
             </div>
           </div>
-        </div>
-        
-        <div className="border-t border-gray-800 pt-8 mt-8 text-sm text-center">
+        </div> */}
+      <div>
+        <div className=" pt-8 text-sm text-center">
           <p className="mb-2">
-            © {new Date().getFullYear()} EidCourses. All rights reserved.
+            © {new Date().getFullYear()} Learning Bangladesh. All rights
+            reserved.
           </p>
           <div className="flex justify-center space-x-4">
-            <a href="#" className="hover:text-emerald-500 transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-emerald-500 transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-emerald-500 transition-colors">Cookie Policy</a>
+            <a
+              href="https://learningbangladesh.com/wp-login.php#privacy-modal"
+              className="hover:text-emerald-500 transition-colors"
+            >
+              Privacy Policy
+            </a>
+            <a
+              href="https://learningbangladesh.com/wp-login.php#privacy-modal"
+              className="hover:text-emerald-500 transition-colors"
+            >
+              Terms of Service
+            </a>
           </div>
         </div>
       </div>
